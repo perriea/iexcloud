@@ -208,7 +208,7 @@ you want a particular API to be developed next, please open an issue.
 - [x] FX Symbols
 - [x] IEX Symbols
 - [ ] International Symbols
-- [ ] International Exchanges
+- [x] International Exchanges
 - [ ] ISIN Mapping
 - [x] Mutual Fund Symbols
 - [ ] Options Symbols
