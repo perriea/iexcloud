@@ -89,3 +89,14 @@ type Sector struct {
 type Tag struct {
 	Name string `json:"name"`
 }
+
+// InternationalExchange provides information about one International exchange including the name,
+// the region code (ISO 3166-1 alpha-2), the full name to identify the exchange,
+// the Market Identifier Code (ISO 10383), and the Exchange Suffix
+type InternationalExchange struct {
+	Exchange       string `json:"exchange"`
+	Region         string `json:"region"`
+	Description    string `json:"description"`
+	MIC            string `json:"mic"`
+	ExchangeSuffix string `json:"exchangeSuffix"`
+}

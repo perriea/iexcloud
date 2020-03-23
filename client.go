@@ -1153,3 +1153,11 @@ func (c Client) IntradayStats(ctx context.Context, symbol string) (IntradayStats
 	err := c.GetJSON(ctx, endpoint, &r)
 	return r, err
 }
+
+// InternationalExchanges returns an array of International Exchanges.
+func (c Client) InternationalExchanges(ctx context.Context) ([]InternationalExchange, error) {
+	e := []InternationalExchange{}
+	endpoint := "/ref-data/exchanges"
+	err := c.GetJSON(ctx, endpoint, &e)
+	return e, err
+}
